@@ -229,7 +229,7 @@ liveboard:
       x: 0
       "y": 12
       height: 8
-      width: 12
+      width: 6
     - visualization_id: Viz_5
       x: 6
       "y": 4
@@ -250,6 +250,11 @@ liveboard:
       "y": 0
       height: 4
       width: 3
+    - visualization_id: Viz_7
+      x: 6
+      "y": 12
+      height: 8
+      width: 6
     - visualization_id: Viz_3
       x: 0
       "y": 0
