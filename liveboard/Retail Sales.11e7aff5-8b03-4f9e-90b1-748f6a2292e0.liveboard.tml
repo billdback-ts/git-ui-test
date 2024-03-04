@@ -78,7 +78,7 @@ liveboard:
   - id: Viz_3
     viz_guid: 27c19bf9-f286-4421-ae40-7a9825774b85
     note_tile:
-      html_parsed_string: "<p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><span style=\"white-space: pre-wrap;\">This liveboard contains information about retail sales.</span></p><p class=\"theme-module__editor-paragraph\" dir=\"ltr\"><br></p>"
+      html_parsed_string: "<p class=\"theme-module__editor-paragraph\"><img id=\"5e1dbcc0-3234-491f-b991-9b4778919741\" alt=\"UPLOAD\" style=\"height: inherit; width: 864px; max-width: 100%;\"></p><p class=\"theme-module__editor-paragraph\"><br></p>"
   - id: Viz_4
     answer:
       name: Sales by Product Type
