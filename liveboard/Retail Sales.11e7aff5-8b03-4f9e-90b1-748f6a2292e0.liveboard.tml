@@ -187,6 +187,42 @@ liveboard:
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"chartSpecific\": {\"customProps\": \"{\\\"tileType\\\":\\\"streets-v9\\\"}\",\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"Zip Code\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"27b86fbf-568e-4fdc-80dd-9ab22ba8a6b8\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"2d6de7a9-432c-4e7f-a9de-390c79c7daea\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Zip Code\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#F04152\"}]}"
       display_mode: CHART_MODE
     viz_guid: 9bd7c0cb-565a-458d-bfd9-697e02157437
+  - id: Viz_7
+    answer:
+      name: Product sales (inc tax)
+      tables:
+      - id: Retail Sales
+        name: Retail Sales
+        fqn: e49d3226-1934-4180-bc23-52ac41843a17
+      search_query: "[Sales with tax] [Product Type]"
+      answer_columns:
+      - name: Total Sales with tax
+      - name: Product Type
+      table:
+        table_columns:
+        - column_id: Product Type
+          show_headline: false
+        - column_id: Total Sales with tax
+          show_headline: false
+        ordered_column_ids:
+        - Product Type
+        - Total Sales with tax
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: Product Type
+        - column_id: Total Sales with tax
+        axis_configs:
+        - x:
+          - Product Type
+          "y":
+          - Total Sales with tax
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {\"xGridlineEnabled\": false,\"yGridlineEnabled\": true},\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}},\"showStackedLabels\": true,\"allLabels\": true},\"columnProperties\": [{\"columnId\": \"Product Type\",\"columnProperty\": {}},{\"columnId\": \"Total Sales with tax\",\"columnProperty\": {\"dataLabels\": true}}],\"axisProperties\": [{\"id\": \"08443c74-7654-4afc-855e-699bac572ad0\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales with tax\"],\"isOpposite\": false}},{\"id\": \"0a3f4e3f-8a4f-4508-933b-767890204eb9\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Product Type\"]}}],\"systemSeriesColors\": [{\"serieName\": \"4e96899d-db64-4c81-bdf0-1dec85e1798e\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Sales with tax\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: 3b53f937-a3a8-49de-b82f-aa5f66d34be1
   layout:
     tiles:
     - visualization_id: Viz_6
@@ -219,3 +255,7 @@ liveboard:
       "y": 0
       height: 4
       width: 6
+  parameter_overrides:
+  - key: a551e593-2cac-4141-ac4b-209ca595a149
+    value:
+      name: Retail Sales::Sales Tax
