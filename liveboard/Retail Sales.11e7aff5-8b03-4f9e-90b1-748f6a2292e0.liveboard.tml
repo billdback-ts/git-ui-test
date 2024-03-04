@@ -264,3 +264,11 @@ liveboard:
   - key: a551e593-2cac-4141-ac4b-209ca595a149
     value:
       name: Retail Sales::Sales Tax
+  views:
+  - view_guid: 92a359f6-0000-4710-8ba8-d987afdbdc13
+    name: 7% tax
+    is_public: true
+    view_parameters:
+    - name: Sales Tax
+      id: a551e593-2cac-4141-ac4b-209ca595a149
+      override_value: "0.07"
